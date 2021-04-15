@@ -1,0 +1,41 @@
+﻿@model EmployeeManagementApp.ViewModels.EmployeeViewModel
+
+@{
+    ViewBag.Title = "Employee Form";
+}
+
+
+<h2>Employee Details</h2>
+<hr />
+
+
+@using (@Html.BeginForm("Save", "Employee"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Employee.Name)
+        @Html.TextBoxFor(m => m.Employee.Name, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Employee.Gender)
+        @Html.DropDownListFor(m => m.Employee.Gender, Model.GenderList, "", new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Employee.Address)
+        @Html.TextBoxFor(m => m.Employee.Address, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.LabelFor(m => m.Employee.ProjectId)
+        @Html.DropDownListFor(m => m.Employee.ProjectId, new SelectList(Model.Project, "Id", "Name"), "", new { @class = "form-control" })
+        <span asp-validation-for="@Model.Employee.ProjectId" class="text-danger"></span>
+    </div>
+  
+
+    @Html.HiddenFor(m => m.Employee.Id)
+
+    var c = @Model.Employee.Id > 0 ? "Update" : "Save";
+    <button type="submit" class="btn btn-info">@c</button>
+}

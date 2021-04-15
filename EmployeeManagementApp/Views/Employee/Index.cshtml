@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EmployeeManagementApp.Data.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-info">Employee List</h2>
+    </div>
+    <div class="col-6 text-right">
+        <button class="btn btn-info">
+            @Html.ActionLink("Create New Employee", "AddEmployee", "Employee")
+        </button>
+    </div>
+</div>
+<br />
+<table class="table table-striped border">
+    <thead>
+        <tr class="table-striped">
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Project</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+        <tr>
+            <td>
+                @employee.Name
+            </td>
+            <td>
+                @employee.Gender
+            </td>
+            <td>
+                @employee.Address
+            </td>
+            <td>
+                @employee.Project.Name
+            </td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = employee.Id })</td>
+            <td>@Html.ActionLink("Delete", "Delete", new { id = employee.Id })</td>
+        </tr>
+        }
+    </tbody>
+</table>
+

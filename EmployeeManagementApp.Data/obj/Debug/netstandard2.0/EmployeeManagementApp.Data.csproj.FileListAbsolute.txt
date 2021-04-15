@@ -1,0 +1,4 @@
+C:\Users\abssacg\Documents\Tech Ed\Apps\EmployeeManagementApp\EmployeeManagementApp.Data\bin\Debug\netstandard2.0\EmployeeManagementApp.Data.deps.json
+C:\Users\abssacg\Documents\Tech Ed\Apps\EmployeeManagementApp\EmployeeManagementApp.Data\bin\Debug\netstandard2.0\EmployeeManagementApp.Data.dll
+C:\Users\abssacg\Documents\Tech Ed\Apps\EmployeeManagementApp\EmployeeManagementApp.Data\obj\Debug\netstandard2.0\EmployeeManagementApp.Data.AssemblyInfoInputs.cache
+C:\Users\abssacg\Documents\Tech Ed\Apps\EmployeeManagementApp\EmployeeManagementApp.Data\obj\Debug\netstandard2.0\EmployeeManagementApp.Data.AssemblyInfo.cs

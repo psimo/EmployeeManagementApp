@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Service\\EmployeeManagementApp.Service.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Data\\EmployeeManagementApp.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Data\\EmployeeManagementApp.Data.csproj",
+        "projectName": "EmployeeManagementApp.Data",
+        "projectPath": "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Data\\EmployeeManagementApp.Data.csproj",
+        "packagesPath": "C:\\Users\\abssacg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\abssacg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Users\\abssacg\\source\\nuget_repo\\baps.tro.common": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Service\\EmployeeManagementApp.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Service\\EmployeeManagementApp.Service.csproj",
+        "projectName": "EmployeeManagementApp.Service",
+        "projectPath": "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Service\\EmployeeManagementApp.Service.csproj",
+        "packagesPath": "C:\\Users\\abssacg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\abssacg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Users\\abssacg\\source\\nuget_repo\\baps.tro.common": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Data\\EmployeeManagementApp.Data.csproj": {
+                "projectPath": "C:\\Users\\abssacg\\Documents\\Tech Ed\\Apps\\EmployeeManagementApp\\EmployeeManagementApp.Data\\EmployeeManagementApp.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
