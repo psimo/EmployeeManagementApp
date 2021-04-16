@@ -39,13 +39,12 @@ namespace EmployeeManagementApp.Controllers
         {
             ViewData["ReturnUrl"] = returnUrl;
 
-            if (username == "bob" && password == "pizza")
+            if (username == "admin" && password == "admin")
             {
                 var claims = new List<Claim>();
                 claims.Add(new Claim("username", username));
                 claims.Add(new Claim(ClaimTypes.NameIdentifier, username));
-                claims.Add(new Claim(ClaimTypes.Name, "Bob Jones"));
-                //claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+               
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
                 var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
